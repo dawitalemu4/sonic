@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: sand.curve.left
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: bb4356cd004d0fd4f954198c392b5191, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.98823535, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
