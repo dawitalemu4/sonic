@@ -10,8 +10,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     private float dirX = 0f;
     private SpriteRenderer sprite;
-    [SerializeField] private float moveSpeed = 10f;
-    [SerializeField] private float jumpForce = 20f;
+    private float moveSpeed = 15f;
+    private float jumpForce = 20f;
 
     private enum MovementState { idle, running, jumping, falling}
   
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        rb.gravityScale = 7;
     }
 
     // Update is called once per frame
